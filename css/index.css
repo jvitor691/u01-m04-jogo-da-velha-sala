@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    margin: auto;
+    background-color: brown;
+    grid-gap: 5px;
+    width: 190px;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-columns: 60px 60px 60px;
+}
+
+.container > div {
+    background-color: blanchedalmond;
+}
