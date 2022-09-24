@@ -7,62 +7,70 @@ function checkWinner() {
     elements[1].innerText === elements[2].innerText &&
     elements[2].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[3].innerText === elements[4].innerText &&
     elements[4].innerText === elements[5].innerText &&
     elements[5].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[6].innerText === elements[7].innerText &&
     elements[7].innerText === elements[8].innerText &&
     elements[8].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[0].innerText === elements[3].innerText &&
     elements[3].innerText === elements[6].innerText &&
     elements[6].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[1].innerText === elements[4].innerText &&
     elements[4].innerText === elements[7].innerText &&
     elements[7].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[2].innerText === elements[5].innerText &&
     elements[5].innerText === elements[8].innerText &&
     elements[8].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[0].innerText === elements[4].innerText &&
     elements[4].innerText === elements[8].innerText &&
     elements[8].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   } else if (
     elements[2].innerText === elements[4].innerText &&
     elements[4].innerText === elements[6].innerText &&
     elements[6].innerText.length !== 0
   ) {
-    debugger;
+    return true;
   }
+  return false;
 }
 
+let winner = false;
+
 function mark(element) {
-  if (element.innerText.length === 0) {
-    element.innerText = jogador;
-    if (jogador === "X") {
-      jogador = "O";
+  if (!winner) {
+    if (element.innerText.length === 0) {
+      element.innerText = jogador;
+      winner = checkWinner();
+      if (winner) {
+        document.getElementById("messages").innerText = "Vencedor: " + jogador;
+      }
+      if (jogador === "X") {
+        jogador = "O";
+      } else {
+        jogador = "X";
+      }
     } else {
-      jogador = "X";
+      alert("Elemento já preenchido");
     }
-    checkWinner();
-  } else {
-    alert("Elemento já preenchido");
   }
 }
