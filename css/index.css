@@ -17,3 +17,15 @@ h2 {
     font-size: 3.5em;
     text-align: center;
 }
+
+#containerMsgs {
+    display: flex;
+    justify-content: center;
+}
+
+#messages {
+    box-sizing: border-box;
+    border: 1px solid brown;
+    width: 190px;
+    height: 80px;
+}
