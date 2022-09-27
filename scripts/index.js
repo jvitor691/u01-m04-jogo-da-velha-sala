@@ -7,6 +7,9 @@ function checkWinner() {
     elements[1].innerText === elements[2].innerText &&
     elements[2].innerText.length !== 0
   ) {
+    elements[0].style="background-color: yellow;";
+    elements[1].style="background-color: yellow;";
+    elements[2].style="background-color: yellow;";
     return true;
   } else if (
     elements[3].innerText === elements[4].innerText &&
