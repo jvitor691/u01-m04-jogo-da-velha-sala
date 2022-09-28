@@ -1,0 +1,19 @@
+{
+  "name": "u01-m04-jogo-da-velha-sala",
+  "version": "1.0.0",
+  "description": "",
+  "main": "testes.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prof-otavio-medeiros/u01-m04-jogo-da-velha-sala.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prof-otavio-medeiros/u01-m04-jogo-da-velha-sala/issues"
+  },
+  "homepage": "https://github.com/prof-otavio-medeiros/u01-m04-jogo-da-velha-sala#readme"
+}
