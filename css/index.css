@@ -26,6 +26,10 @@ h2 {
 #messages {
     box-sizing: border-box;
     border: 1px solid brown;
-    width: 190px;
-    height: 80px;
+    width: 65px;
+    height: 40px;
+}
+#containerEscolhas{
+    display: flex;
+    justify-content: center;
 }
