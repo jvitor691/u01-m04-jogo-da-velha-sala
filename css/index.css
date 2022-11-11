@@ -43,3 +43,9 @@ h2 {
     margin-left: 2px;
     border-top: 10px;
 }
+#box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
