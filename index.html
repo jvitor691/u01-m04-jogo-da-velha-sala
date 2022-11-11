@@ -21,17 +21,16 @@
         <div onclick="mark(this)"></div>
         <div onclick="mark(this)"></div>
     </div>
-    <div id="containerEscolhas">
-        <div id="containerMsgs">
-            <div id="messages"></div>
+        <div id="containerEscolhas">
+            <div id="containerMsgs">
+                <div id="messages"></div>
+            </div>
+            <select id="escolherJogador" onchange="chooserGamer()">
+                <option value="">...</option>              
+                <option value="x">X</option>
+              <option value="o">O</option>
+            </select>
+            <button type="reset" id="reiniciar" onclick="refresh(this)">Reiniciar</button>
         </div>
-        <div id="escolherJogador">
-            <label for="x" name="gam">X</label>
-            <input type="radio" name="gam" id="x">
-            <label for="o" name="gam">O</label>
-            <input type="radio" name="gam" id="o">
-        </div>
-        <button type="reset">Reiniciar</button>
-    </div>
 </body>
 </html>

@@ -1,8 +1,16 @@
-let gammer = document.getElementsByName('gam');
+let gammer = "";
 let winner = false;
 let gameOver = false;
 
-function checkWinner() {
+  function chooserGamer(){
+    let gamers = document.querySelector('#escolherJogador');
+    let value = gamers.options[gamers.selectedIndex];
+    let name = value.text;
+    gammer = name;
+    return gammer;
+  }
+
+  function checkWinner() {
   let elements = document.getElementById("container").children;
   if (
     elements[0].innerText === elements[1].innerText &&
@@ -94,6 +102,10 @@ function checkGameOver() {
     }
   }
   return gameOver;
+}
+
+function refresh(){
+  window.location.reload()
 }
 
 function mark(element) {
