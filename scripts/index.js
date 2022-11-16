@@ -122,7 +122,7 @@ function mark(element) {
           return;
         }
       }
-      if (gammer === "X") {
+      if (gammer === "X"){
         gammer = "O";
       } else {
         gammer = "X";

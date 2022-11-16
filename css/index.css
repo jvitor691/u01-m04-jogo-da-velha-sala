@@ -36,12 +36,14 @@ h2 {
     flex-wrap: wrap;
     width: 250px;
     height: 90px;
+    
 }
 #escolherJogador{
     display: flex;
     align-items: center;
     margin-left: 2px;
     border-top: 10px;
+    padding-top: 5px;
 }
 #box{
     display: flex;
