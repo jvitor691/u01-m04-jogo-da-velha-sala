@@ -26,12 +26,14 @@
                 <div id="containerMsgs">
                     <div id="messages"></div>
                 </div>
-                <select id="escolherJogador" onchange="chooserGamer()">
-                    <option value="">Escolher Jogador</option>
-                    <option value="x">X</option>
-                  <option value="o">O</option>
-                </select>
-                <button type="reset" id="reiniciar" onclick="refresh(this)">Reiniciar</button>
+                <div class="menuDeEscolhas">
+                    <label for="">Primeiro jogador</label>
+                    <select id="escolherJogador" class = "menuDeEscolhas" onchange="chooserGamer()">
+                        <option value="x">X</option>
+                      <option value="o">O</option>
+                    </select>
+                </div>
+                    <button type="reset" id="reiniciar" onclick="refresh(this)">iniciar</button>
             </div>
     </div>
 </body>
